@@ -1,0 +1,17 @@
+FROM node:11-alpine
+WORKDIR /opt/app
+RUN yarn
+EXPOSE 3000
+CMD ["yarn", "run", "start"]
+
+
+#WORKDIR /opt/app
+#ENTRYPOINT sh -c
+#RUN yarn install
+#EXPOSE 3000
+#CMD yarn run start
+#COPY ./ ./
+#RUN yarn install
+#
+#EXPOSE 3000
+#CMD yarn run start
