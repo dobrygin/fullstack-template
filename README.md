@@ -23,3 +23,24 @@ All the technologies used in this project.
 ### Devops
 - [Docker](https://docker.com) — Сontainerization.
 - [Nginx](https://nginx.org/) — Powerful HTTP-server. Reverse proxy.
+
+
+## Usage
+### Run development build
+Front-end and back-end starts with hot reloading and NODE_ENV=development
+#### Just run development build
+```shell script
+docker-compose -f docker-compose.dev.yml up -d
+```
+#### Rebuild containers
+```shell script
+docker-compose -f docker-compose.dev.yml up -d --build
+```
+#### Force recreate containers
+```shell script
+docker-compose -f docker-compose.dev.yml up -d --force-recreate
+```
+#### Rebuild and force recreate containers
+```shell script
+docker-compose -f docker-compose.dev.yml up -d --build --force-recreate
+```
