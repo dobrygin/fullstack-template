@@ -12,6 +12,8 @@ services:
     build:
       context: ./containers/frontend/my-app
       dockerfile: Dockerfile.dev
+    environment:
+      - NODE_ENV=development
     volumes:
       - ./containers/frontend/my-app/contents:/opt/app
       - /opt/app/node_modules
