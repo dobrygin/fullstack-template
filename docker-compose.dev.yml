@@ -29,6 +29,6 @@ services:
     environment:
       - POSTGRES_PASSWORD=password
     volumes:
-      - "./containers/sql/postgres/postgres-data:/var/lib/postgresql/data"
+      - "./containers/sql/postgres/data:/var/lib/postgresql/data"
     ports:
       - "127.0.0.1:5432:5432"
